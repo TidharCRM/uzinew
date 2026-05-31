@@ -1,0 +1,6 @@
+# nested clone of the source template — not part of this site
+__parent_source/
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
