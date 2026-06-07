@@ -29,20 +29,20 @@
         url('assets/fonts/tzofia-extrabold.woff')  format('woff')}
 
   :root{
-    /* ───── brutalist earth palette — warm sand bg, dark ink, terracotta accent ───── */
-    --bg:           #EBE0CB;  /* warm sand page */
-    --bg-soft:      #DBC6A2;  /* deeper sand / clay — alternating sections */
-    --bg-card:      #FFFCF5;  /* warm off-white cards */
-    --bg-deep:      #1E1810;  /* warm near-black — dark sections */
-    --bg-deeper:    #120D07;
+    /* ───── brutalist turquoise palette — cool aqua bg, deep teal ink, turquoise accent ───── */
+    --bg:           #DCEEEC;  /* light aqua page */
+    --bg-soft:      #B9DCD6;  /* deeper aqua / teal — alternating sections */
+    --bg-card:      #F4FCFB;  /* cool off-white cards */
+    --bg-deep:      #0C2422;  /* deep teal near-black — dark sections */
+    --bg-deeper:    #061614;
 
-    --ink:          #211B12;
-    --ink-soft:     #2E2618;
-    --ink-mute:     #6E5536;  /* warm brown */
+    --ink:          #0E2926;
+    --ink-soft:     #143C38;
+    --ink-mute:     #4C726D;  /* muted teal-gray */
 
-    --teal:         #C16A38;  /* TERRACOTTA — primary accent */
-    --teal-deep:    #8C4A20;  /* burnt sienna / rust */
-    --teal-mist:    #E6CFAE;  /* light tan tint */
+    --teal:         #15B5A6;  /* TURQUOISE — primary accent */
+    --teal-deep:    #0E8A7E;  /* deep turquoise */
+    --teal-mist:    #BCE3DD;  /* light turquoise tint */
 
     --line:         #111111;  /* solid black borders */
     --line-strong:  #111111;
@@ -106,7 +106,7 @@
 
   /* ───── header ───── */
   .site-header{position:sticky;top:0;z-index:200;
-    background:rgba(244,239,227,.86);backdrop-filter:saturate(160%) blur(14px);
+    background:rgba(234,247,245,.86);backdrop-filter:saturate(160%) blur(14px);
     -webkit-backdrop-filter:saturate(160%) blur(14px);
     border-bottom:1px solid transparent;transition:border-color .3s var(--ease)}
   .site-header.is-scrolled{border-bottom-color:var(--line)}
@@ -137,9 +137,9 @@
     object-position:center;z-index:0;display:none}
   .hero-bg::before{content:"";position:absolute;inset:0;z-index:1;
     background:radial-gradient(ellipse 70% 50% at 75% 30%, var(--teal-mist) 0%, transparent 60%),
-               radial-gradient(ellipse 55% 40% at 20% 80%, #E5DAB7 0%, transparent 55%)}
+               radial-gradient(ellipse 55% 40% at 20% 80%, #CBE8E2 0%, transparent 55%)}
   .hero-bg::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;display:none;
-    background:linear-gradient(180deg,rgba(244,239,227,.45) 0%,rgba(244,239,227,.78) 55%,var(--bg) 100%)}
+    background:linear-gradient(180deg,rgba(234,247,245,.45) 0%,rgba(234,247,245,.78) 55%,var(--bg) 100%)}
   .hero-grain{position:absolute;inset:0;z-index:2;
     background-image:radial-gradient(circle at 1px 1px, rgba(10,61,58,.05) 1px, transparent 0);
     background-size:28px 28px;opacity:.5;
@@ -152,7 +152,7 @@
   .hero-title{font-family:var(--font);font-weight:700;
     font-size:clamp(40px,5.6vw,72px);line-height:1.04;letter-spacing:-.03em;
     color:var(--ink);margin:28px 0 26px}
-  .hero-title .accent{display:block;color:#5B8F96;font-weight:600;font-style:italic}
+  .hero-title .accent{display:block;color:#2E8C84;font-weight:600;font-style:italic}
   /* cigarette CTA — uses ctabutton.png as the visual, with depth + breathing */
   .btn-hero{display:block;position:relative;padding:0;border:0;background:transparent;
     width:min(100%,540px);aspect-ratio:600/140;
@@ -275,7 +275,7 @@
   #guide .section-title{margin-bottom:16px}
 
   .closing-copy{max-width:680px}
-  .closing-copy p{color:rgba(244,239,227,.85);font-size:17px;line-height:1.75;margin:0 0 1em}
+  .closing-copy p{color:rgba(234,247,245,.85);font-size:17px;line-height:1.75;margin:0 0 1em}
   .closing-copy p:last-child{margin-bottom:0}
 
   /* lead form — editorial underline inputs with teal accents */
@@ -366,7 +366,7 @@
   .method-card p{font-size:15.5px;color:var(--ink-soft);line-height:1.75;margin:0}
   .method-card.featured{background:var(--bg-deep);border-color:var(--bg-deep);color:var(--bg)}
   .method-card.featured h3{color:var(--bg)}
-  .method-card.featured p{color:rgba(244,239,227,.85)}
+  .method-card.featured p{color:rgba(234,247,245,.85)}
   .method-card.featured .method-num{color:var(--teal-mist)}
   .method-card.featured .method-num::before{background:var(--teal-mist)}
   @media (max-width:980px){.method-grid{grid-template-columns:1fr}}
@@ -456,7 +456,7 @@
     flex-wrap:wrap;max-width:var(--container);margin:0 auto;padding:0 28px}
   .cta-strip h2{font-family:var(--font);font-size:clamp(28px,3.6vw,40px);color:var(--bg);
     margin:0 0 8px;letter-spacing:-.02em;font-weight:700}
-  .cta-strip p{font-size:17px;color:rgba(244,239,227,.82);margin:0}
+  .cta-strip p{font-size:17px;color:rgba(234,247,245,.82);margin:0}
   .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
   .cta-strip .btn-primary{background:var(--teal);border-color:var(--teal);color:#fff}
   .cta-strip .btn-primary:hover{background:var(--bg);color:var(--ink);border-color:var(--bg)}
@@ -488,10 +488,10 @@
   .contact-card .eyebrow::before{background:var(--teal-mist)}
   .contact-card h3{font-family:var(--font);font-size:30px;color:var(--bg);
     margin:0 0 16px;letter-spacing:-.02em;line-height:1.2;font-weight:700}
-  .contact-card p{color:rgba(244,239,227,.82);font-size:16.5px;line-height:1.7;margin:0 0 28px}
+  .contact-card p{color:rgba(234,247,245,.82);font-size:16.5px;line-height:1.7;margin:0 0 28px}
   .contact-card .btn-whatsapp{padding:18px 30px;font-size:16px;width:100%;
     justify-content:space-between}
-  .contact-card .small{margin-top:18px;font-size:13px;color:rgba(244,239,227,.6);
+  .contact-card .small{margin-top:18px;font-size:13px;color:rgba(234,247,245,.6);
     text-align:center;letter-spacing:.02em}
   .contact-card-deco{position:absolute;top:-1px;left:-1px;width:60px;height:60px;
     border-top:2px solid var(--teal);border-left:2px solid var(--teal)}
@@ -551,18 +551,18 @@
   }
 
   /* ───── footer ───── */
-  .site-footer{background:var(--bg-deeper);color:rgba(244,239,227,.72);padding:64px 0 0}
+  .site-footer{background:var(--bg-deeper);color:rgba(234,247,245,.72);padding:64px 0 0}
   .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:50px;
     max-width:var(--container);margin:0 auto;padding:0 28px 50px}
   .footer-brand p{margin-top:18px;font-size:14px;line-height:1.75;max-width:380px;
-    color:rgba(244,239,227,.66)}
+    color:rgba(234,247,245,.66)}
   .footer-col h4{font-family:var(--font);font-size:14px;color:var(--bg);margin:0 0 18px;
     text-transform:uppercase;letter-spacing:.14em}
   .footer-col ul{display:grid;gap:10px}
-  .footer-col a{font-size:14.5px;color:rgba(244,239,227,.72)}
+  .footer-col a{font-size:14.5px;color:rgba(234,247,245,.72)}
   .footer-col a:hover{color:var(--teal-mist)}
-  .footer-bottom{border-top:1px solid rgba(244,239,227,.10);padding:22px 0;font-size:13px;
-    color:rgba(244,239,227,.55)}
+  .footer-bottom{border-top:1px solid rgba(234,247,245,.10);padding:22px 0;font-size:13px;
+    color:rgba(234,247,245,.55)}
   .footer-bottom .inner{display:flex;justify-content:space-between;align-items:center;
     flex-wrap:wrap;gap:14px;max-width:var(--container);margin:0 auto;padding:0 28px}
   @media (max-width:980px){.footer-grid{grid-template-columns:1fr;gap:32px}}
@@ -694,7 +694,7 @@
   .splash-cta svg{flex-shrink:0}
   .splash-cta .splash-arrow{transition:transform .25s var(--ease)}
   .splash-cta:hover .splash-arrow{transform:translateX(-4px)}
-  .splash-hint{margin:0;color:rgba(244,239,227,.55);font-size:14px;font-weight:500;
+  .splash-hint{margin:0;color:rgba(234,247,245,.55);font-size:14px;font-weight:500;
     letter-spacing:.04em}
   @keyframes splash-pulse{
     0%,100%{transform:scale(1);
@@ -864,13 +864,13 @@
     border-top:2px solid var(--teal);border-left:2px solid var(--teal)}
   .price-card .eyebrow{color:var(--teal-mist);justify-content:center}
   .price-card .eyebrow::before{background:var(--teal-mist)}
-  .price-old{font-size:20px;color:rgba(244,239,227,.55);text-decoration:line-through;
+  .price-old{font-size:20px;color:rgba(234,247,245,.55);text-decoration:line-through;
     margin:0 0 6px;font-weight:500}
   .price-new{font-family:var(--font);font-size:clamp(56px,10vw,84px);font-weight:800;
     color:var(--bg);line-height:1;letter-spacing:-.03em;margin:0 0 8px;
     font-variant-numeric:tabular-nums}
   .price-new small{font-size:.4em;font-weight:600;color:var(--teal-mist);margin-inline-start:6px}
-  .price-note{color:rgba(244,239,227,.82);font-size:16px;line-height:1.7;margin:0 auto 32px;
+  .price-note{color:rgba(234,247,245,.82);font-size:16px;line-height:1.7;margin:0 auto 32px;
     max-width:42ch}
   .price-card .btn-primary{background:var(--teal);border-color:var(--teal);color:#fff;
     width:100%;justify-content:center}
@@ -1071,6 +1071,7 @@
   .tree-layer h3{font-size:24px;margin-bottom:12px}
   .tree-layer p{font-size:16px;line-height:1.78;color:var(--ink-soft);margin:0}
   .tree-stack{display:grid;gap:22px}
+  .tree-img{display:block;width:100%;margin-top:28px;border:3px solid #111;box-shadow:var(--shadow);background:#fff}
   .lead-form select,.lead-form textarea{width:100%;padding:10px 2px 12px;border:0;border-bottom:3px solid #111;background:transparent;font-family:inherit;font-size:17px;color:#111;font-weight:600;text-align:right;outline:none}
   .lead-form textarea{min-height:92px;resize:vertical;line-height:1.6}
   .lead-form select:focus,.lead-form textarea:focus{border-bottom-color:var(--teal-deep);box-shadow:inset 0 -3px 0 var(--teal-deep)}
@@ -1081,7 +1082,7 @@
   .check-list li{display:flex;align-items:flex-start;gap:14px;padding:18px 22px;background:#fff;border:3px solid #111;box-shadow:var(--shadow-sm);font-size:16px;font-weight:700;color:#111;line-height:1.65}
   .check-list li::before{content:'✓';width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;background:var(--teal);border:2px solid #111;font-weight:900;line-height:1}
   .section-actions{display:flex;justify-content:center;margin-top:34px}
-  .footer-credit{color:rgba(244,239,227,.55)}
+  .footer-credit{color:rgba(234,247,245,.55)}
   .hero-title .accent-line{display:block;color:var(--teal-deep)}
   @media (max-width:980px){.trust-grid,.two-col,.form-grid-2{grid-template-columns:1fr}.sticky-head{position:static}.trust-card{text-align:right}}
 </style>
@@ -1156,7 +1157,7 @@
 </div></section>
 
 <section class="section method" id="tree"><div class="container two-col">
-  <div class="sticky-head"><span class="eyebrow">עץ ההתמכרות</span><h2 class="section-title">מה שרואים בחוץ זה עדיין רק הענפים.</h2><p class="section-sub">ההתמכרות, ההרס העצמי, הטראומות ומשברי החיים נראים מעל האדמה. אבל כל עוד השורש לא מטופל, אותם ענפים יחזרו לצמוח — לפעמים בצורה חדשה.</p></div>
+  <div class="sticky-head"><span class="eyebrow">עץ ההתמכרות</span><h2 class="section-title">מה שרואים בחוץ זה עדיין רק הענפים.</h2><p class="section-sub">ההתמכרות, ההרס העצמי, הטראומות ומשברי החיים נראים מעל האדמה. אבל כל עוד השורש לא מטופל, אותם ענפים יחזרו לצמוח — לפעמים בצורה חדשה.</p><img src="tree.jpeg" alt="עץ ההתמכרות — הענפים שמעל האדמה, הגזע והשורש שמתחת" class="tree-img" loading="lazy" /></div>
   <div class="tree-stack">
     <article class="tree-layer" data-layer="שכבה 01 / מעל האדמה"><h3>בעיה פיזית: הכפייתיות</h3><p>סמים, אלכוהול, הימורים, מסכים, אוכל, סיגריות, עבודה, יחסים ודפוסי התנהגות. זו השכבה שכולם מתעסקים בה — וזו בדיוק הסיבה שלבד היא לא נעצרת.</p></article>
     <article class="tree-layer" data-layer="שכבה 02 / הגזע"><h3>בעיה נפשית: מה שמזין</h3><p>הרס עצמי, פגיעות, שברים בסיסיים, צלקות, אובססיה, חרדה וטראומה. זו השכבה שמחזיקה את הענפים — והשכבה שרוב הטיפולים לא נוגעים בה באמת.</p></article>
@@ -1188,7 +1189,7 @@
 </div></section>
 
 <section class="section faq" id="faq"><div class="container faq-grid">
-  <div class="faq-head"><span class="eyebrow">שאלות נפוצות</span><h2 class="section-title">שאלות שאנשים באמת שואלים.</h2><p>לא מצאת תשובה? מלא את השאלון הקצר ואחזור אליך תוך 24 שעות.</p><a href="#contact" class="btn btn-outline">למילוי השאלון</a></div>
+  <div class="faq-head"><span class="eyebrow">שאלות נפוצות</span><h2 class="section-title">שאלות שאנשים באמת שואלים.</h2><p>לא מצאת תשובה? מלא את השאלון הקצר ואחזור אליך תוך 24 שעות.</p></div>
   <ul class="faq-list" id="faqList">
     <li class="faq-item"><button class="faq-q" type="button"><span>האם הטיפול חסוי?</span><span class="faq-icon"></span></button><div class="faq-a"><p>לחלוטין. כל מה שנאמר בחדר נשאר בחדר. דיסקרטיות מלאה היא תנאי בסיס לכל תהליך.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>האם יש שיחת היכרות ראשונית?</span><span class="faq-icon"></span></button><div class="faq-a"><p>כן. אחרי מילוי השאלון אני חוזר לשיחה קצרה וללא עלות, כדי להבין את התמונה ולבדוק התאמה.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>אני לא בטוח שזו התמכרות — זה רלוונטי?</span><span class="faq-icon"></span></button><div class="faq-a"><p>בהחלט. אתה לא צריך הגדרה כדי לדעת שמשהו חוזר ומחזיק אותך. התחושה שאתה תקוע מספיקה כדי להתחיל.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>כמה זמן לוקח תהליך?</span><span class="faq-icon"></span></button><div class="faq-a"><p>זה תלוי בך, בקצב שלך ובמה שפוגשים בדרך. כבר מהפגישות הראשונות מקבלים כלים מעשיים ותמונה ברורה.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>מה ההבדל בין NLP, CBT וריברסינג?</span><span class="faq-icon"></span></button><div class="faq-a"><p>CBT עובד על מחשבה והתנהגות, NLP על השפה והסיפור הפנימי, וריברסינג דרך הגוף והנשימה. אצלי הם משתלבים לפי הצורך.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>גם בני זוג של מכורים יכולים לפנות?</span><span class="faq-icon"></span></button><div class="faq-a"><p>כן. אני מלווה גם בני ובנות זוג, וגם זוגות יחד — כדי שלא תעברו את זה לבד, אחד מול השני.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>גם משפחות של מכורים יכולות לעבור תהליך?</span><span class="faq-icon"></span></button><div class="faq-a"><p>כן, ובגדול. התמכרות אף פעם לא נשארת אצל אדם אחד — היא מטלטלת את כל המשפחה. הורים, אחים, ילדים בני זוג, כולם נושאים את המתח, האשמה, הדאגה והכעס, ולא פעם בונים סביב המכור דפוסים שמנסים "להציל" אבל בלי כוונה דווקא משמרים את הסבל. בתהליך משפחתי אנחנו עובדים על הגבולות, על הפסקת ההגנה האוטומטית, על האשמה והבושה שכל אחד סוחב, ועל הדרך לדאוג לעצמכם בלי לאבד את עצמכם בתוך ההתמכרות של מישהו אחר. לפעמים המשפחה פונה עוד לפני שהמכור מוכן — וגם זה נקודת התחלה לגיטימית לחלוטין. כשהמערכת סביב המכור משתנה, גם לו נפתח מרחב אחר להשתנות.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>הפגישות פרונטליות או גם אונליין?</span><span class="faq-icon"></span></button><div class="faq-a"><p>שתי האפשרויות קיימות. נמצא יחד את מה שמתאים לך מבחינת מרחק, נוחות ופרטיות.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>אני לא מאמין שדיבור יכול לעזור — כבר ניסיתי</span><span class="faq-icon"></span></button><div class="faq-a"><p>מובן. העבודה שלי היא לא עוד דיבור. היא נוגעת בגוף, בדפוס ובשורש — לא רק בסיפור שעל פני השטח.</p></div></li><li class="faq-item"><button class="faq-q" type="button"><span>איך מתחילים?</span><span class="faq-icon"></span></button><div class="faq-a"><p>ממלאים את השאלון הקצר למטה. אחזור אליך תוך 24 שעות, ואם יש התאמה — נקבע פגישה.</p></div></li>
   </ul>
@@ -1197,9 +1198,9 @@
 <section class="contact" id="contact"><div class="contact-grid"><div class="contact-info"><span class="eyebrow">לפני יצירת קשר</span><h2 class="section-title">שאלון קצר, ואז מתקשרים.</h2><p>כדי לכבד את הזמן של שנינו ולהבין אם יש התאמה — מילוי השאלון הוא תנאי לפני התקשרות או הודעה בוואטסאפ. התשובות יעזרו לי להגיע לשיחה כשאני כבר מבין את התמונה.</p><ul class="contact-list"><li><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h3l2 5-2 1c1 3 3 5 6 6l1-2 5 2v3a2 2 0 0 1-2 2C9 21 3 15 3 6a2 2 0 0 1 2-2z"/></svg></span><div><strong>טלפון · וואטסאפ</strong><a href="tel:+972547000609" dir="ltr">054-700-0609</a></div></li></ul></div>
   <aside class="lead-form-wrap"><form class="lead-form" id="leadForm" novalidate><div class="form-grid-2"><div class="field"><label for="leadName">שם מלא *</label><input type="text" id="leadName" name="name" required autocomplete="name" placeholder="שם מלא" /></div><div class="field"><label for="leadPhone">טלפון *</label><input type="tel" id="leadPhone" name="phone" required dir="ltr" autocomplete="tel" placeholder="054-1234567" /></div><div class="field"><label for="leadAge">גיל *</label><select id="leadAge" name="age" required><option value="">בחירה</option><option>18-25</option><option>26-35</option><option>36-45</option><option>46-55</option><option>56+</option></select></div><div class="field"><label for="leadIssue">מה ההתמכרות / הקושי? *</label><select id="leadIssue" name="issue" required><option value="">בחירה</option><option>סמים</option><option>אלכוהול</option><option>הימורים</option><option>מסכים-דיגיטל</option><option>אוכל</option><option>יחסים</option><option>עבודה</option><option>משבר חיים</option><option>אחר</option></select></div><div class="field full"><label for="leadDetails">פרט יותר (אופציונלי)</label><textarea id="leadDetails" name="details" placeholder="אפשר לכתוב כאן כמה מילים על המצב"></textarea></div><div class="field"><label for="leadTime">כמה זמן אתה בלופ הזה? *</label><select id="leadTime" name="time" required><option value="">בחירה</option><option>פחות משנה</option><option>1-3 שנים</option><option>3-5 שנים</option><option>5-10 שנים</option><option>יותר מ-10 שנים</option></select></div><div class="field"><label for="leadTrigger">מה גרם לך לפנות עכשיו? *</label><select id="leadTrigger" name="trigger" required><option value="">בחירה</option><option>משבר משפחתי-זוגי</option><option>קשיים בעבודה</option><option>בעיה בריאותית</option><option>רצון פנימי לשינוי</option><option>פגיעה במישהו קרוב</option><option>הגעתי לתחתית</option><option>לחץ מהקרובים</option><option>אחר</option></select></div><div class="field full"><label for="leadMore">פרט יותר (אופציונלי)</label><textarea id="leadMore" name="more" placeholder="מה חשוב שאדע לפני השיחה?"></textarea></div></div><button type="submit" class="btn btn-primary btn-lg btn-block lead-submit"><span>שלח שאלון</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"/></svg></button><p class="form-note">דיסקרטיות מלאה · התשובות מגיעות אליי בלבד</p></form></aside></div></section>
 
-<section class="cta-strip" id="closing"><div class="cta-inner"><div class="closing-copy"><span class="eyebrow">הצעד הראשון</span><h2>לא צריך לעשות את זה לבד.</h2><p>הצעד הראשון הוא מילוי השאלון הקצר. אחריו אפשר להתקשר או לשלוח הודעה בוואטסאפ. אחזור אליך בהקדם, ואם יש התאמה — נקבע פגישה בתשלום. דיסקרטיות מלאה, בלי שום התחייבות עד שמתאמים פגישה.</p><p>שאלון קצר לפני שיחה · שיחה ראשונית ללא עלות · דיסקרטיות מלאה · תשובה תוך 24 שעות</p></div><div class="cta-actions"><a href="#contact" class="btn btn-primary btn-lg">למילוי השאלון</a></div></div></section>
+<section class="cta-strip" id="closing"><div class="cta-inner"><div class="closing-copy"><span class="eyebrow">הצעד הראשון</span><h2>לא צריך לעשות את זה לבד.</h2><p>הצעד הראשון הוא מילוי השאלון הקצר. אחריו אפשר להתקשר או לשלוח הודעה בוואטסאפ. אחזור אליך בהקדם, ואם יש התאמה — נקבע פגישה בתשלום. דיסקרטיות מלאה, בלי שום התחייבות עד שמתאמים פגישה.</p><p>שאלון קצר לפני שיחה · שיחה ראשונית ללא עלות · דיסקרטיות מלאה · תשובה תוך 24 שעות</p></div></div></section>
 
-<footer class="site-footer"><div class="footer-grid"><div class="footer-brand"><div class="brand"><span class="brand-mark" aria-hidden="true">ע</span><span class="brand-text"><strong style="color:var(--bg)">עוזי בראל</strong><span style="color:rgba(244,239,227,.6)">מטפל בהתמכרויות ומשברי חיים</span></span></div><p>ליווי אישי בהתמכרויות, משברי חיים וטראומות שלא מרפות — אדם מול אדם, בדיסקרטיות מלאה.</p></div><div class="footer-col"><h4>ניווט</h4><ul><li><a href="#about">מי זה עוזי</a></li><li><a href="#tree">עץ ההתמכרות</a></li><li><a href="#methods">השיטות</a></li><li><a href="#faq">שאלות נפוצות</a></li><li><a href="#contact">שאלון</a></li></ul></div><div class="footer-col"><h4>יצירת קשר</h4><ul><li><a href="tel:+972547000609" dir="ltr">054-700-0609</a></li><li><a href="https://wa.me/972547000609" target="_blank" rel="noopener">WhatsApp</a></li></ul></div></div><div class="footer-bottom"><div class="inner"><span>© <span id="year"></span> · עוזי בראל</span><span class="footer-credit">מופעל על ידי KLIX</span></div></div></footer>
+<footer class="site-footer"><div class="footer-grid"><div class="footer-brand"><div class="brand"><span class="brand-mark" aria-hidden="true">ע</span><span class="brand-text"><strong style="color:var(--bg)">עוזי בראל</strong><span style="color:rgba(234,247,245,.6)">מטפל בהתמכרויות ומשברי חיים</span></span></div><p>ליווי אישי בהתמכרויות, משברי חיים וטראומות שלא מרפות — אדם מול אדם, בדיסקרטיות מלאה.</p></div><div class="footer-col"><h4>ניווט</h4><ul><li><a href="#about">מי זה עוזי</a></li><li><a href="#tree">עץ ההתמכרות</a></li><li><a href="#methods">השיטות</a></li><li><a href="#faq">שאלות נפוצות</a></li><li><a href="#contact">שאלון</a></li></ul></div><div class="footer-col"><h4>יצירת קשר</h4><ul><li><a href="tel:+972547000609" dir="ltr">054-700-0609</a></li><li><a href="https://wa.me/972547000609" target="_blank" rel="noopener">WhatsApp</a></li></ul></div></div><div class="footer-bottom"><div class="inner"><span>© <span id="year"></span> · עוזי בראל</span><span class="footer-credit">מופעל על ידי KLIX</span></div></div></footer>
 
 <a href="https://wa.me/972547000609" class="float-whatsapp" target="_blank" rel="noopener" aria-label="פתיחת שיחה ב-WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.3 0-.5 0-.1-.6-1.5-.8-2.1-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.7.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.2-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.2-1.4c1.5.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
 
